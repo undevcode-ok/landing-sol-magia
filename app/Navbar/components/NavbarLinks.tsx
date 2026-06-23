@@ -9,12 +9,16 @@ export const NavbarLinks = () => {
 
   return (
     <nav aria-label="Navegación principal">
-      <ul className="navbar-links">
+      <ul className="flex items-center gap-9 list-none m-0 p-0">
         {navLinks.map((link) => (
           <li key={link.href}>
             <Link
               href={link.href}
-              className={`navbar-links__item ${activeLink === link.href ? "navbar-links__item--active" : ""}`}
+              className={`text-sm font-normal transition-colors duration-200 no-underline ${
+                activeLink === link.href
+                  ? "text-white"
+                  : "text-[#e0d8d8] hover:text-white"
+              }`}
             >
               {link.label}
             </Link>
