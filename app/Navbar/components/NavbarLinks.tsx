@@ -14,7 +14,7 @@ export const NavbarLinks = () => {
           <li key={link.href}>
             <Link
               href={link.href}
-              className={`text-sm font-normal transition-colors duration-200 no-underline ${
+              className={`text-base font-normal transition-colors duration-200 no-underline ${
                 activeLink === link.href
                   ? "text-white"
                   : "text-[#e0d8d8] hover:text-white"
