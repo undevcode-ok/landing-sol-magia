@@ -5,6 +5,7 @@ import { Urgency } from "./Urgency";
 import { Reed } from "./Reed";
 import { Reference } from "./Reference";
 import { Enemigos } from "./Profile";
+import { Footer } from "./Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Reed />
       <Reference />
       <Enemigos />
+      <Footer />
     </main>
   );
 }
