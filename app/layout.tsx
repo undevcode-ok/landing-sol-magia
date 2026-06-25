@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
+import { StickyButtons } from "./Globals/components";
 
 const nanumGothic = Nanum_Gothic({
   subsets: ["latin"],
@@ -22,7 +23,10 @@ export default function RootLayout({
       lang="en"
       className={`${nanumGothic.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <StickyButtons />
+      </body>
     </html>
   );
 }
