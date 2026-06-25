@@ -11,7 +11,7 @@ export const Services = () => {
   return (
     <section className="bg-[#111] py-12 px-6">
       <ServiciosGrid servicios={servicios} onCardClick={openModal} />
-      {selected && <ServicieModal servicio={selected} onClose={closeModal} />}
+      {selected && <ServicioModal servicio={selected} onClose={closeModal} />}
     </section>
   );
 };

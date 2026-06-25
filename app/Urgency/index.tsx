@@ -9,10 +9,13 @@ export const Urgency = () => {
   const { isOpen, openModal, closeModal } = useUrgencyModal();
 
   return (
-    <section className="bg-[#111] py-12 px-6 flex flex-col items-center gap-9">
+    <section className="relative bg-[#111] pt-12 pb-32 px-6 flex flex-col items-center gap-9">
       <UrgencyCard onClick={openModal} />
       <UrgencyWPButton />
       {isOpen && <UrgencyModal onClose={closeModal} />}
+ 
+      {/* Fade inferior hacia rojo sangre */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#3d0a0a] pointer-events-none" />
     </section>
   );
 };
