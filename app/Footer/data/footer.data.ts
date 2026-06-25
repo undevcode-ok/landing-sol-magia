@@ -8,12 +8,11 @@ export const footerData: FooterData = {
       "Atención a distancia en toda Argentina. Ciudad Autónoma de Buenos Aires, Palermo Hollywood.",
   },
   navLinks: [
-    { label: "Inicio", href: "/" },
-    { label: "Servicios", href: "/servicios" },
-    { label: "Urgencias", href: "/urgencias" },
-    { label: "Leer Bien", href: "/leer-bien" },
-    { label: "Referencias", href: "/referencias" },
-    { label: "Aclaraciones", href: "/aclaraciones" },
+    { label: "Inicio", href: "#hero" },
+  { label: "Servicios", href: "#services" },
+  { label: "Aclaraciones", href: "#urgency" },
+  { label: "Referencias", href: "#references" },
+
   ],
   socialLinks: [
     { id: 1, label: "Facebook", href: "https://facebook.com", icon: "facebook" },
