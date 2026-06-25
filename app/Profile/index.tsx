@@ -11,7 +11,7 @@ export const Enemigos = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[500px] overflow-hidden flex items-center justify-center"
+      className="relative h-[500px] min-w-7xl overflow-hidden flex items-center justify-center"
     >
       <EnemigosBackground ref={bgRef} />
       <div className="relative z-[2] flex flex-col items-center gap-8 px-6">

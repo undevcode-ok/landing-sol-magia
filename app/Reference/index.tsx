@@ -16,7 +16,7 @@ export const Reference = () => {
       }}
     >
       <ReferenceHeader />
-      <div className="w-full max-w-5xl">
+      <div className="w-full max-w-7xl">
         <div className="flex gap-6 transition-all duration-500">
           {currentRefs.map((ref) => (
             <ReferenceCard key={ref.id} referencia={ref} />
