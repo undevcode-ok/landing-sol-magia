@@ -9,7 +9,7 @@ export const EnemigosButton = () => {
       href={wpUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-[#f06060] hover:bg-[#d94f4f] text-white text-[14px] font-medium px-8 py-3 rounded-full flex items-center gap-2 transition-colors no-underline"
+      className="bg-[#581c87] hover:bg-[#3b0764] text-white text-[14px] font-medium px-8 py-3 rounded-full flex items-center gap-2 transition-colors no-underline"
     >
       <MessageCircle size={16} />
       Comunicarse

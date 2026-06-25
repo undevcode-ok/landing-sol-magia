@@ -6,10 +6,10 @@ export const logoData: LogoData = {
 };
 
 export const navLinks: NavLink[] = [
-  { label: "Inicio", href: "/" },
-  { label: "Servicios", href: "/servicios" },
-  { label: "Referencias", href: "/referencias" },
-  { label: "Aclaraciones", href: "/aclaraciones" },
+  { label: "Inicio", href: "#hero" },
+  { label: "Servicios", href: "#services" },
+  { label: "Aclaraciones", href: "#urgency" },
+  { label: "Referencias", href: "#references" },
 ];
 
 export const ctaData: CTAData = {

@@ -9,7 +9,7 @@ export const Urgency = () => {
   const { isOpen, openModal, closeModal } = useUrgencyModal();
 
   return (
-    <section className="relative bg-[#111] pt-12 pb-32 px-6 flex flex-col items-center gap-9">
+    <section id="urgency" className="relative bg-[#111] pt-12 pb-32 px-6 flex flex-col items-center gap-9">
       <UrgencyCard onClick={openModal} />
       <UrgencyWPButton />
       {isOpen && <UrgencyModal onClose={closeModal} />}

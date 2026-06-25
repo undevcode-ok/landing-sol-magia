@@ -6,7 +6,21 @@ interface Props {
 
 export const ReferenceCard = ({ referencia }: Props) => {
   return (
-    <div className="flex-1 bg-white/5 border border-white/10 rounded-[20px] overflow-hidden flex flex-col">
+    <div className="
+    group
+    cursor-pointer
+    overflow-hidden
+    rounded-3xl
+    bg-zinc-900
+    border
+    border-violet-800/40
+    shadow-lg
+    shadow-black/40
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:border-violet-500
+    flex-1 bg-white/5 border border-white/10 rounded-[20px] overflow-hidden flex flex-col">
       <img
         src={referencia.avatar}
         alt={referencia.name}

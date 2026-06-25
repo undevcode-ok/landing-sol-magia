@@ -10,10 +10,10 @@ interface Props {
 
 export const CarouselControls = ({ current, total, onPrev, onNext, onGoTo }: Props) => {
   return (
-    <div className="flex items-center justify-center gap-4 mt-6">
+     <div className="flex items-center justify-center gap-4 mt-6">
       <button
         onClick={onPrev}
-        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-[rgba(240,96,96,0.3)] hover:border-[#f06060] transition-colors"
+        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-[rgba(240,96,96,0.3)] hover:border-[#581c87] transition-colors"
         aria-label="Anterior"
       >
         <ChevronLeft size={18} />
@@ -26,7 +26,7 @@ export const CarouselControls = ({ current, total, onPrev, onNext, onGoTo }: Pro
             aria-label={`Ir al slide ${i + 1}`}
             className={`w-2 h-2 rounded-full transition-all duration-200 ${
               i === current
-                ? "bg-[#f06060] scale-125"
+                ? "bg-[#581c87] scale-125"
                 : "bg-white/20"
             }`}
           />
@@ -34,7 +34,7 @@ export const CarouselControls = ({ current, total, onPrev, onNext, onGoTo }: Pro
       </div>
       <button
         onClick={onNext}
-        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-[rgba(240,96,96,0.3)] hover:border-[#f06060] transition-colors"
+        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-[rgba(240,96,96,0.3)] hover:border-[#581c87] transition-colors"
         aria-label="Siguiente"
       >
         <ChevronRight size={18} />

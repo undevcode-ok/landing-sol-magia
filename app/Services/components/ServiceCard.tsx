@@ -8,23 +8,70 @@ interface Props {
 export const ServicieCard = ({ servicio, onClick }: Props) => {
   return (
     <div
-      onClick={() => onClick(servicio)}
-      className="bg-[#f06060] rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200  group p-3 pb-4"
-    >
-      <img
-        src={servicio.img}
-        alt={servicio.title}
-        loading="lazy"
-        className="w-full aspect-[4/4] object-cover block rounded-xl transition-all duration-500 grayscale-0 group-hover:grayscale"
-      />
-      <div className="pt-3 pb-1">
-        <p className="text-2xl  uppercase text-[#1a0000] text-center mb-2 leading-snug min-h-[34px] flex items-center justify-center">
-          {servicio.title}
-        </p>
-        <button className="flex items-center justify-center hover:text-white  gap-1 text-lg text-[#1a0000]  w-full bg-transparent border-none cursor-pointer">
-          Ver más →
-        </button>
-      </div>
-    </div>
+  onClick={() => onClick(servicio)}
+  className="
+    group
+    cursor-pointer
+    overflow-hidden
+    rounded-3xl
+    bg-zinc-900
+    border
+    border-violet-800/40
+    shadow-lg
+    shadow-black/40
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:border-violet-500
+  "
+>
+  <div className="overflow-hidden">
+    <img
+      src={servicio.img}
+      alt={servicio.title}
+      className="
+        w-full
+        aspect-[3/4]
+        object-cover
+        transition-transform
+        duration-700
+        group-hover:scale-110
+      "
+    />
+  </div>
+
+  <div className="p-5">
+    <h3 className="text-white text-lg font-semibold text-center">
+      {servicio.title}
+    </h3>
+
+    <p className="text-zinc-400 text-sm mt-3 line-clamp-3 min-h-[64px] leading-6 text-left">
+      {servicio.desc}
+    </p>
+
+    <div className="mt-5 flex items-center justify-center">
+  <div className="mt-5 flex items-center justify-center gap-3">
+  <div className="h-px w-8 bg-violet-700/50" />
+
+  <span
+    className="
+      uppercase
+      tracking-[0.2em]
+      text-xs
+      font-semibold
+      text-violet-300
+      transition-colors
+      duration-300
+      group-hover:text-violet-100
+    "
+  >
+    Ver Servicio
+  </span>
+
+  <div className="h-px w-8 bg-violet-700/50" />
+</div>
+</div>
+  </div>
+</div>
   );
 };
