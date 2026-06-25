@@ -9,7 +9,7 @@ export const Footer = () => {
       className="border-t border-[rgba(240,96,96,0.15)]"
       style={{ background: "#0a0303" }}
     >
-      <div className="grid grid-cols-3 gap-12 max-w-[1000px] mx-auto px-10 py-14">
+      <div className="grid grid-cols-3 gap-12 max-w-8xl mx-auto px-10 py-14">
         <FooterBrand />
         <FooterNav />
         <FooterSocialAndPayment />

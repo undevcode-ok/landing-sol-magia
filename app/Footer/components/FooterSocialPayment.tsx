@@ -20,12 +20,12 @@ export const FooterSocialAndPayment = () => {
         {footerData.paymentMethods.map((method) => (
           <div
             key={method.id}
-            className="bg-white rounded-[6px] px-2 flex items-center justify-center h-7"
+            className="bg-white rounded-[6px] px-2 flex items-center justify-center h-12 w-20"
           >
             <img
               src={method.logo}
               alt={method.name}
-              className="h-4 w-auto block"
+              className="h-full w-full block"
             />
           </div>
         ))}
