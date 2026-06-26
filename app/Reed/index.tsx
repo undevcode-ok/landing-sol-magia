@@ -1,49 +1,27 @@
 import { data } from "./data/reed.data";
 import { ReedHeader } from "./components/ReedHeader";
-import { ReedImage } from "./components/ReedImage";
 import { ReedRules } from "./components/ReedRules";
 
 export const Reed = () => {
-  // Unimos ambas listas de reglas en una sola
   const rules = [...data.rulesLeft, ...data.rulesRight];
 
   return (
     <section
-      className="
-        min-h-[560px]
-        flex
-        flex-col
-        items-center
-        justify-center
-        px-6
-        md:px-12
-        py-20
-        gap-14
-      "
-      style={{
-        background: "linear-gradient(180deg, #3d0a0a 0%, #2b0707 100%)",
-      }}
+      id="leer-bien"
+      className="relative px-6 md:px-10 py-28 overflow-hidden"
+      style={{ background: "linear-gradient(180deg, #2b0707 0%, #1a0404 60%, #0f0202 100%)" }}
     >
-      <ReedHeader />
-
+      {/* Glow central — sin textura de grilla */}
       <div
-        className="
-          flex
-          flex-col
-          lg:flex-row
-          items-start
-          gap-10
-          w-full
-          max-w-7xl
-        "
-      >
-        <div className="shrink-0">
-          <ReedImage />
-        </div>
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] pointer-events-none"
+        style={{
+          background: "radial-gradient(ellipse, rgba(120,20,20,0.12) 0%, transparent 70%)",
+        }}
+      />
 
-        <div className="flex-1">
-          <ReedRules rules={rules} />
-        </div>
+      <div className="relative z-10">
+        <ReedHeader />
+        <ReedRules rules={rules} />
       </div>
     </section>
   );
