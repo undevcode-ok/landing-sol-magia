@@ -1,46 +1,58 @@
-import { FooterData } from "../types/footer.types";
+export const WP_NUMBER = "5491100000000";
 
-export const footerData: FooterData = {
-  brand: {
-    title: "Flama Ancestral",
-    subtitle: "Rituales & Hechizos",
-    description:
-      "Atención a distancia en toda Argentina. Ciudad Autónoma de Buenos Aires, Palermo Hollywood.",
+export const FOOTER_DATA = {
+  brand: "Flama Ancestral.",
+  tagline: "Rituales & Hechizos — Atención a distancia en toda Argentina.",
+  contact: {
+    wp: `https://wa.me/${WP_NUMBER}`,
+    wpLabel: "WhatsApp disponible",
+    location: "Palermo Hollywood, CABA",
   },
-  navLinks: [
-    { label: "Inicio", href: "#hero" },
-  { label: "Servicios", href: "#services" },
-  { label: "Aclaraciones", href: "#urgency" },
-  { label: "Referencias", href: "#references" },
-
+  cta: {
+    label: "Comunicarse",
+    href: `https://wa.me/${WP_NUMBER}`,
+  },
+  columns: [
+    {
+      title: "Navegación",
+      links: [
+        { label: "Inicio", href: "#hero" },
+        { label: "Servicios", href: "#services" },
+        { label: "Urgencias", href: "#urgency" },
+        { label: "Leer bien", href: "#leer-bien" },
+        { label: "Referencias", href: "#references" },
+      ],
+    },
+    {
+      title: "Servicios",
+      links: [
+        { label: "Videncia", href: "#services" },
+        { label: "Limpieza energética", href: "#services" },
+        { label: "Protección y blindaje", href: "#services" },
+        { label: "Corte de lazos", href: "#services" },
+        { label: "Apertura de caminos", href: "#services" },
+      ],
+    },
+    {
+      title: "Info",
+      links: [
+        { label: "Política de privacidad", href: "#" },
+        { label: "Términos y condiciones", href: "#" },
+        { label: "Preguntas frecuentes", href: "#" },
+        { label: "Horarios de atención", href: "#leer-bien" },
+      ],
+    },
   ],
-  socialLinks: [
-    { id: 1, label: "Facebook", href: "https://facebook.com", icon: "facebook" },
-    { id: 2, label: "Instagram", href: "https://instagram.com", icon: "instagram" },
-    { id: 3, label: "WhatsApp", href: "https://wa.me/5491100000000", icon: "whatsapp" },
+  socials: [
+    { label: "Instagram", href: "https://instagram.com", hoverColor: "#e1306c", icon: "instagram" },
+    { label: "TikTok", href: "https://tiktok.com", hoverColor: "#ffffff", icon: "tiktok" },
+    { label: "Facebook", href: "https://facebook.com", hoverColor: "#1877f2", icon: "facebook" },
+    { label: "WhatsApp", href: `https://wa.me/${WP_NUMBER}`, hoverColor: "#25d366", icon: "whatsapp" },
   ],
-  paymentMethods: [
-  {
-    id: 1,
-    name: "Visa",
-    logo: "https://cdn.simpleicons.org/visa", // tu asset local
+  copyright: "© 2025 Flama Ancestral.® — Todos los derechos reservados.",
+  developer: {
+    text: "Desarrollado con",
+    name: "UNDEVCODE",
+    href: "https://undevcode.com",
   },
-  {
-    id: 2,
-    name: "Visa",
-    logo: "https://cdn.simpleicons.org/visa",
-  },
-  {
-    id: 3,
-    name: "Mastercard",
-    logo: "https://cdn.simpleicons.org/mastercard",
-  },
-  {
-    id: 4,
-    name: "Mastercard",
-    logo: "https://cdn.simpleicons.org/mastercard",
-  },
-],
-  copyright: "Flama Ancestral",
-  madeWith: "Hecho con ♥ por el equipo de Undevcode",
 };
