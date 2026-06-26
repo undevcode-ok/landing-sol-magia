@@ -1,6 +1,8 @@
 export interface NavLink {
   label: string;
   href: string;
+  hasDropdown?: boolean;
+  children?: { label: string; href: string }[];
 }
 
 export interface LogoData {

@@ -1,14 +1,26 @@
 import { logoData } from "../data/navbar.data";
 
-export const NavbarLogo = () => {
+interface NavbarLogoProps {
+  isLight: boolean;
+}
+
+export const NavbarLogo = ({ isLight }: NavbarLogoProps) => {
   return (
-    <div className="flex flex-col leading-tight">
-      <span className="text-white text-[17px] font-bold uppercase tracking-widest">
+    <a href="#hero" className="flex flex-col leading-tight no-underline">
+      <span
+        className={`text-[17px] font-bold uppercase tracking-widest transition-colors duration-300 ${
+          isLight ? "text-[#1a0a0a]" : "text-white"
+        }`}
+      >
         {logoData.title}
       </span>
-      <span className="text-white text-[15px] font-normal tracking-wide">
+      <span
+        className={`text-[13px] font-normal tracking-wide transition-colors duration-300 ${
+          isLight ? "text-[#1a0a0a]/70" : "text-white/80"
+        }`}
+      >
         {logoData.subtitle}
       </span>
-    </div>
+    </a>
   );
 };
