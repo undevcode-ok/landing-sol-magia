@@ -8,7 +8,7 @@ export const NavbarLogo = ({ isLight }: NavbarLogoProps) => {
   return (
     <a href="#hero" className="flex flex-col leading-tight no-underline">
       <span
-        className={`text-[17px] font-bold uppercase tracking-widest transition-colors duration-300 ${
+        className={`text-2xl font-bold uppercase tracking-widest transition-colors duration-300 ${
           isLight ? "text-[#1a0a0a]" : "text-white"
         }`}
       >

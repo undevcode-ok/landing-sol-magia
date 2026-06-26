@@ -30,7 +30,7 @@ export const Services = () => {
           <span className="w-5 h-5 rounded-full bg-[#c0392b] flex items-center justify-center text-white text-xs font-bold leading-none">
             +
           </span>
-          <span className="text-sm font-medium text-white/50 tracking-wide">
+          <span className="text-lg font-medium text-white/50 tracking-wide">
             {SERVICES_META.eyebrow}
           </span>
         </div>
@@ -49,9 +49,9 @@ export const Services = () => {
               {SERVICES_META.title}
               <span className="text-[#c0392b]">{SERVICES_META.titleAccent}</span>
             </h2>
-            <p className="text-white/40 text-base mt-2">{SERVICES_META.subtitle}</p>
+            <p className="text-white/40 text-2xl mt-2">{SERVICES_META.subtitle}</p>
           </div>
-          <p className="text-white/40 text-sm leading-relaxed text-left md:text-right">
+          <p className="text-white/40 text-lg leading-relaxed text-left md:text-right">
             {SERVICES_META.description}
           </p>
         </div>

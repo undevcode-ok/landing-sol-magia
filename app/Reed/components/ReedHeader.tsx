@@ -45,16 +45,16 @@ export const ReedHeader = () => {
         transition: "opacity 1s ease, transform 1s ease",
       }}
     >
-      <p style={{ fontSize: 10, letterSpacing: "0.45em", color: "rgba(184,134,11,0.6)", textTransform: "uppercase", marginBottom: 24 }}>
+      <p style={{ fontSize: 20, letterSpacing: "0.45em", color: "rgba(184,134,11,0.6)", textTransform: "uppercase", marginBottom: 24 }}>
         {data.eyebrow}
       </p>
 
       <OrnamentDivider />
 
-      <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: 56, fontWeight: 300, color: "#fff", letterSpacing: "0.04em", margin: "18px 0 6px", lineHeight: 1, fontVariant: "small-caps" }}>
+      <h2 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: 150, fontWeight: 300, color: "#fff", letterSpacing: "0.04em", margin: "18px 0 6px", lineHeight: 1, fontVariant: "small-caps" }}>
         {data.title}
       </h2>
-      <p style={{ fontSize: 11, letterSpacing: "0.3em", color: "rgba(255,255,255,0.25)", textTransform: "uppercase", marginBottom: 24 }}>
+      <p style={{ fontSize: 20, letterSpacing: "0.3em", color: "rgba(255,255,255,0.25)", textTransform: "uppercase", marginBottom: 24 }}>
         {data.description}
       </p>
 

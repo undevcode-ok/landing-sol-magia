@@ -27,16 +27,16 @@ export const ReferenceHeader = () => {
         transition: "opacity 0.8s ease, transform 0.8s ease",
       }}
     >
-      <p className="text-[10px] tracking-[0.4em] uppercase text-[#b8860b]/60 mb-3">
+      <p className="text-2xl tracking-[0.4em] uppercase text-[#b8860b]/60 mb-3">
         Testimonios
       </p>
       <h2
-        className="text-white text-5xl md:text-6xl font-light leading-tight mb-3"
+        className="text-white text-8xl font-light leading-tight mb-3"
         style={{ fontFamily: "var(--font-cormorant), serif" }}
       >
         Lo que dicen mis consultantes
       </h2>
-      <p className="text-white/35 text-sm tracking-widest uppercase">
+      <p className="text-white/35 text-2xl tracking-widest uppercase">
         Eficacia y trayectoria verificables en historias de Instagram
       </p>
       <div className="w-8 h-[1px] bg-[#c0392b] mx-auto mt-5" />

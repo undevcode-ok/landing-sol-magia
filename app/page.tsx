@@ -4,7 +4,7 @@ import { Services } from "./Services";
 import { Urgency } from "./Urgency";
 import { Reed } from "./Reed";
 import { Reference } from "./Reference";
-import { Enemigos } from "./Profile";
+
 import { Footer } from "./Footer";
 
 export default function Home() {
@@ -16,7 +16,6 @@ export default function Home() {
       <Urgency />
       <Reed />
       <Reference />
-      <Enemigos />
       <Footer />
     </main>
   );

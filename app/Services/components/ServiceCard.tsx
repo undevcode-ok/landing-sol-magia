@@ -21,14 +21,14 @@ export const ServiceCard = ({ servicio, index, isInView, onClick }: ServiceCardP
       {/* Card header row */}
       <div className="flex items-baseline justify-between mb-2 px-1">
         <div className="flex items-baseline gap-3">
-          <span className="text-sm font-semibold text-white/90 tracking-tight">
+          <span className="text-2xl font-semibold text-white/90 tracking-tight">
             {servicio.title}
           </span>
-          <span className="text-xs text-white/40 italic hidden sm:inline">
+          <span className="text-lg text-white/40 italic hidden sm:inline">
             {servicio.tagline}
           </span>
         </div>
-        <span className="text-white/20 text-sm select-none">+</span>
+        <span className="text-white/20 text-2xl select-none">+</span>
       </div>
 
       {/* Image with blur hover */}
@@ -48,16 +48,16 @@ export const ServiceCard = ({ servicio, index, isInView, onClick }: ServiceCardP
           <span className="text-white font-bold text-2xl sm:text-3xl tracking-tight text-center px-6 leading-tight drop-shadow-lg">
             {servicio.title}
           </span>
-          <span className="text-white/75 text-sm text-center px-8 leading-snug">
+          <span className="text-white/75 text-lg text-center px-8 leading-snug">
             {servicio.desc.slice(0, 80)}…
           </span>
-          <span className="mt-2 px-5 py-2 rounded-full bg-[#c0392b] text-white text-xs font-semibold tracking-wide">
-            Ver servicio →
+          <span className="mt-2 px-5 py-2 rounded-full bg-[#c0392b] text-white text-lg font-semibold tracking-wide">
+            Ver servicio
           </span>
         </div>
 
         {/* Tag badge */}
-        <span className="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white/80 text-[10px] font-medium tracking-widest uppercase">
+        <span className="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white/80 text-sm font-medium tracking-widest uppercase">
           {servicio.tag}
         </span>
       </div>

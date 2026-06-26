@@ -56,8 +56,8 @@ export const ReferenceCard = ({ referencia, index, isVisible }: Props) => {
 
       {/* Nombre siempre visible abajo — desaparece en hover */}
       <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-2">
-        <p className="text-white/50 text-[10px] tracking-[0.25em] uppercase mb-1">{referencia.service}</p>
-        <p className="text-white text-lg font-semibold">{referencia.name}</p>
+        <p className="text-white/50 text-2xl tracking-[0.25em] uppercase mb-1">{referencia.service}</p>
+        <p className="text-white text-4xl font-semibold">{referencia.name}</p>
       </div>
 
       {/* Contenido hover — sube desde abajo con efecto ritual */}
@@ -73,7 +73,7 @@ export const ReferenceCard = ({ referencia, index, isVisible }: Props) => {
         </svg>
 
         {/* Servicio */}
-        <p className="text-[9px] uppercase tracking-[0.4em] text-[#b8860b]/70 mb-3">
+        <p className="text-2xl uppercase tracking-[0.4em] text-[#b8860b]/70 mb-3">
           {referencia.service}
         </p>
 
@@ -82,8 +82,8 @@ export const ReferenceCard = ({ referencia, index, isVisible }: Props) => {
 
         {/* Testimonio */}
         <p
-          className="text-white/90 text-sm leading-[1.8] italic mb-6"
-          style={{ fontFamily: "var(--font-cormorant), serif", fontSize: 17 }}
+          className="text-white/90 text-4xl leading-[1.8] italic mb-6"
+          style={{ fontFamily: "var(--font-cormorant), serif" }}
         >
           "{referencia.text}"
         </p>
@@ -92,8 +92,8 @@ export const ReferenceCard = ({ referencia, index, isVisible }: Props) => {
         <div className="w-6 h-[0.5px] bg-[#b8860b]/40 mb-4" />
 
         {/* Nombre + ciudad */}
-        <p className="text-white text-base font-semibold tracking-wide">{referencia.name}</p>
-        <p className="text-white/35 text-[10px] tracking-widest uppercase mt-1">{referencia.location}</p>
+        <p className="text-white text-2xl font-semibold tracking-wide">{referencia.name}</p>
+        <p className="text-white/35 text-xl tracking-widest uppercase mt-1">{referencia.location}</p>
 
         {/* Ornamento inferior */}
         <svg width="60" height="12" viewBox="0 0 60 12" fill="none" className="mt-5 opacity-60">

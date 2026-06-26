@@ -38,7 +38,7 @@ export const NavbarLinks = ({
 
               {link.hasDropdown ? (
                 <span
-                  className={`flex items-center gap-1 text-base font-normal tracking-widest transition-colors duration-300 cursor-default select-none uppercase ${
+                  className={`flex items-center gap-1 text-2xl font-normal tracking-widest transition-colors duration-300 cursor-default select-none uppercase ${
                     isLight
                       ? "text-[#1a0a0a]/70 hover:text-[#1a0a0a]"
                       : "text-white/80 hover:text-white"
@@ -55,7 +55,7 @@ export const NavbarLinks = ({
               ) : (
                 <a
                   href={link.href}
-                  className={`text-base font-normal transition-colors duration-200 no-underline tracking-wide ${
+                  className={`text-2xl font-normal transition-colors duration-200 no-underline tracking-wide ${
                     isLight
                       ? "text-[#1a0a0a]/70 hover:text-[#1a0a0a]"
                       : "text-white/80 hover:text-white"

@@ -20,14 +20,14 @@ export const UrgencyCard = ({ isInView, onClick }: Props) => {
       {/* Card header row */}
       <div className="flex items-baseline justify-between mb-2 px-1">
         <div className="flex items-baseline gap-3">
-          <span className="text-sm font-semibold text-white/90 tracking-tight">
+          <span className="text-2xl font-semibold text-white/90 tracking-tight">
             {urgencyData.title}
           </span>
-          <span className="text-xs text-white/40 italic hidden sm:inline">
+          <span className="text-lg text-white/40 italic hidden sm:inline">
             {urgencyData.tagline}
           </span>
         </div>
-        <span className="text-white/20 text-sm select-none">+</span>
+        <span className="text-white/20 text-2xl select-none">+</span>
       </div>
 
       {/* Card image + hover overlay */}
@@ -40,14 +40,14 @@ export const UrgencyCard = ({ isInView, onClick }: Props) => {
 
         {/* Hover overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400 z-10 gap-4">
-          <span className="text-white font-bold text-3xl sm:text-4xl tracking-tight text-center px-6 leading-tight drop-shadow-lg">
+          <span className="text-white font-bold text-4xl sm:text-4xl tracking-tight text-center px-6 leading-tight drop-shadow-lg">
             {urgencyData.title}
           </span>
-          <span className="text-white/75 text-sm text-center px-8 max-w-lg leading-snug">
-            {urgencyData.shortDesc.slice(0, 100)}…
+          <span className="text-white/75 text-xl text-center px-8 max-w-lg leading-snug">
+            {urgencyData.shortDesc.slice(0, 90)}…
           </span>
-          <span className="mt-2 px-5 py-2 rounded-full bg-[#c0392b] text-white text-xs font-semibold tracking-wide">
-            Ver detalles →
+          <span className="mt-2 px-14 py-2 rounded-full bg-[#c0392b] text-white text-2xl font-semibold tracking-wide">
+            Ver detalles
           </span>
         </div>
 
@@ -58,9 +58,7 @@ export const UrgencyCard = ({ isInView, onClick }: Props) => {
       </div>
 
       {/* Description row below card */}
-      <p className="text-white/40 text-sm leading-relaxed mt-3 px-1 max-w-2xl">
-        {urgencyData.shortDesc}
-      </p>
+      
     </div>
   );
 };
