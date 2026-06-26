@@ -1,18 +1,21 @@
-import { MessageCircle } from "lucide-react";
 import { WP_NUMBER } from "../data/urgency.data";
 
 export const UrgencyWPButton = () => {
   const wpUrl = `https://wa.me/${WP_NUMBER}?text=${encodeURIComponent("Hola, quiero comunicarme")}`;
 
   return (
-    <a
-      href={wpUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-[#581c87] hover:bg-[#3b0764] text-white text-[13px] font-bold uppercase tracking-widest px-10 py-4 rounded-full flex items-center gap-3 transition-colors no-underline"
+    <div
+      className="flex justify-center"
     >
-      <MessageCircle size={18} />
-      Click para comunicarse
-    </a>
+      <a
+        href={wpUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative text-sm font-semibold text-white/70 border-b border-white/30 pb-0.5 hover:text-[#c0392b] hover:border-[#c0392b] transition-colors duration-300 no-underline"
+      >
+        Comunicarse ahora
+        <span className="ml-1 inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+      </a>
+    </div>
   );
 };

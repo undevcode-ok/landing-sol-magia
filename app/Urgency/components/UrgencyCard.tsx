@@ -1,78 +1,66 @@
+"use client";
+
 import { urgencyData } from "../data/urgency.data";
 
 interface Props {
+  isInView: boolean;
   onClick: () => void;
 }
 
-export const UrgencyCard = ({ onClick }: Props) => {
+export const UrgencyCard = ({ isInView, onClick }: Props) => {
   return (
     <div
       onClick={onClick}
-      className="
-        group
-        cursor-pointer
-        overflow-hidden
-        rounded-3xl
-        max-w-7xl
-        bg-zinc-900
-        border
-        border-violet-800/40
-        shadow-lg
-        shadow-black/40
-        transition-all
-        duration-300
-        hover:-translate-y-2
-        hover:border-violet-500
-      "
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? "translateY(0)" : "translateY(36px)",
+        transition: "opacity 0.8s cubic-bezier(0.25,1,0.5,1) 120ms, transform 0.8s cubic-bezier(0.25,1,0.5,1) 120ms",
+      }}
     >
-      <div className="flex flex-col md:flex-row">
-        <div className="overflow-hidden md:w-[360px] shrink-0">
-          <img
-            src={urgencyData.img}
-            alt={urgencyData.title}
-            className="
-              w-full
-              h-full
-              min-h-[320px]
-              object-cover
-              transition-all
-              duration-700
-              group-hover:scale-105
-            "
-          />
-        </div>
-
-        <div className="flex flex-1 flex-col justify-center px-10 py-10">
-          <h3 className="mb-4 text-3xl font-semibold text-white">
+      {/* Card header row */}
+      <div className="flex items-baseline justify-between mb-2 px-1">
+        <div className="flex items-baseline gap-3">
+          <span className="text-sm font-semibold text-white/90 tracking-tight">
             {urgencyData.title}
-          </h3>
-
-          <p className="mb-8 max-w-4xl text-base leading-8 text-zinc-300">
-            {urgencyData.shortDesc}
-          </p>
-
-          <div className="flex items-center gap-3">
-            <div className="h-px w-10 bg-violet-700/60" />
-
-            <span
-              className="
-                uppercase
-                tracking-[0.18em]
-                text-xs
-                font-semibold
-                text-violet-300
-                transition-colors
-                duration-300
-                group-hover:text-violet-100
-              "
-            >
-              Ver Detalles
-            </span>
-
-            <div className="h-px w-10 bg-violet-700/60" />
-          </div>
+          </span>
+          <span className="text-xs text-white/40 italic hidden sm:inline">
+            {urgencyData.tagline}
+          </span>
         </div>
+        <span className="text-white/20 text-sm select-none">+</span>
       </div>
+
+      {/* Card image + hover overlay */}
+      <div className="group relative overflow-hidden rounded-2xl cursor-pointer">
+        <img
+          src={urgencyData.img}
+          alt={urgencyData.title}
+          className="w-full aspect-[16/6] object-cover transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105 group-hover:blur-[3px] group-hover:brightness-50"
+        />
+
+        {/* Hover overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400 z-10 gap-4">
+          <span className="text-white font-bold text-3xl sm:text-4xl tracking-tight text-center px-6 leading-tight drop-shadow-lg">
+            {urgencyData.title}
+          </span>
+          <span className="text-white/75 text-sm text-center px-8 max-w-lg leading-snug">
+            {urgencyData.shortDesc.slice(0, 100)}…
+          </span>
+          <span className="mt-2 px-5 py-2 rounded-full bg-[#c0392b] text-white text-xs font-semibold tracking-wide">
+            Ver detalles →
+          </span>
+        </div>
+
+        {/* Tag badge */}
+        <span className="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white/80 text-[10px] font-medium tracking-widest uppercase">
+          {urgencyData.tag}
+        </span>
+      </div>
+
+      {/* Description row below card */}
+      <p className="text-white/40 text-sm leading-relaxed mt-3 px-1 max-w-2xl">
+        {urgencyData.shortDesc}
+      </p>
     </div>
   );
 };
