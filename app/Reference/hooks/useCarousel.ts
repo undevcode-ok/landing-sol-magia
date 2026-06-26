@@ -1,20 +1,27 @@
 "use client";
 
-import { useState } from "react";
-import { referencias, SLIDE_SIZE } from "../data/reference.data";
+import { useState, useCallback } from "react";
+import { referencias } from "../data/reference.data";
 
 export const useCarousel = () => {
-  const totalSlides = Math.ceil(referencias.length / SLIDE_SIZE);
+  const total = referencias.length;
   const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(1);
 
-  const next = () => setCurrent((prev) => (prev + 1) % totalSlides);
-  const prev = () => setCurrent((prev) => (prev - 1 + totalSlides) % totalSlides);
-  const goTo = (index: number) => setCurrent(index);
+  const next = useCallback(() => {
+    setDirection(1);
+    setCurrent((prev) => (prev + 1) % total);
+  }, [total]);
 
-  const currentRefs = referencias.slice(
-    current * SLIDE_SIZE,
-    current * SLIDE_SIZE + SLIDE_SIZE
-  );
+  const prev = useCallback(() => {
+    setDirection(-1);
+    setCurrent((prev) => (prev - 1 + total) % total);
+  }, [total]);
 
-  return { current, totalSlides, currentRefs, next, prev, goTo };
+  const goTo = useCallback((index: number) => {
+    setDirection(index > current ? 1 : -1);
+    setCurrent(index);
+  }, [current]);
+
+  return { current, total, direction, next, prev, goTo };
 };

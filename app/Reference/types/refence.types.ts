@@ -1,8 +1,8 @@
 export interface Referencia {
   id: number;
-  img: string;
+  avatar: string;
   text: string;
   name: string;
   location: string;
-  avatar: string;
+  service: string;
 }
