@@ -1,16 +1,23 @@
 import { Servicie } from "../types/services.type";
-import { ServicieCard } from "./ServiceCard";
+import { ServiceCard } from "./ServiceCard";
 
 interface Props {
   servicios: Servicie[];
+  isInView: boolean;
   onCardClick: (servicio: Servicie) => void;
 }
 
-export const ServiciosGrid = ({ servicios, onCardClick }: Props) => {
+export const ServiciosGrid = ({ servicios, isInView, onCardClick }: Props) => {
   return (
-    <div className="grid grid-cols-4 gap-4 max-w-7xl mx-auto">
-      {servicios.map((s) => (
-        <ServicieCard key={s.id} servicio={s} onClick={onCardClick} />
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-14">
+      {servicios.map((s, index) => (
+        <ServiceCard
+          key={s.id}
+          servicio={s}
+          index={index}
+          isInView={isInView}
+          onClick={onCardClick}
+        />
       ))}
     </div>
   );
