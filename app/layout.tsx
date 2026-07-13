@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Nanum_Gothic } from "next/font/google";
+import { Nanum_Gothic, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { StickyButtons } from "./Globals/components";
 
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
+});
 const nanumGothic = Nanum_Gothic({
   subsets: ["latin"],
   weight: ["400", "700", "800"],
+  variable: "--font-nanum",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${nanumGothic.className} h-full antialiased`}
+      className={`${cormorantGaramond.variable} ${nanumGothic.variable} font-serif h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

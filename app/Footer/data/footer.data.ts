@@ -1,4 +1,5 @@
 import { FooterData } from "../types/footer.types";
+import { buildWhatsAppUrl } from "@/app/Globals";
 
 export const footerData: FooterData = {
   brand: {
@@ -17,7 +18,7 @@ export const footerData: FooterData = {
   socialLinks: [
     { id: 1, label: "Facebook", href: "https://facebook.com", icon: "facebook" },
     { id: 2, label: "Instagram", href: "https://instagram.com", icon: "instagram" },
-    { id: 3, label: "WhatsApp", href: "https://wa.me/5491100000000", icon: "whatsapp" },
+    { id: 3, label: "WhatsApp", href: buildWhatsAppUrl(), icon: "whatsapp" },
   ],
   paymentMethods: [
   {

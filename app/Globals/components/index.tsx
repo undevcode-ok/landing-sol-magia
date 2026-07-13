@@ -2,14 +2,15 @@
 
 import { ChevronUp } from "lucide-react";
 import { useStickyButtons } from "./hooks/useStickyButtons";
+import { buildWhatsAppUrl } from "@/app/Globals";
 
-const WP_NUMBER = "5491100000000";
-const WP_MESSAGE = encodeURIComponent("Hola, quiero comunicarme");
 
 export const StickyButtons = () => {
   const { isVisible, scrollToTop } = useStickyButtons();
 
   if (!isVisible) return null;
+
+  const wpUrl = buildWhatsAppUrl();
 
   return (
     <>
@@ -24,7 +25,7 @@ export const StickyButtons = () => {
  
       {/* WhatsApp — derecha */}
       <a
-        href={`https://wa.me/${WP_NUMBER}?text=${WP_MESSAGE}`}
+        href={wpUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"

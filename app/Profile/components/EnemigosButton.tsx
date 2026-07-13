@@ -1,8 +1,9 @@
 import { MessageCircle } from "lucide-react";
-import { WP_NUMBER, enemigosData } from "../data/enemigos.data";
+import {  enemigosData } from "../data/enemigos.data";
+import { buildWhatsAppUrl } from "@/app/Globals";
 
 export const EnemigosButton = () => {
-  const wpUrl = `https://wa.me/${WP_NUMBER}?text=${encodeURIComponent(enemigosData.wpMessage)}`;
+  const wpUrl = buildWhatsAppUrl(enemigosData.wpMessage);
 
   return (
     <a

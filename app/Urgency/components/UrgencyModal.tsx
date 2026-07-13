@@ -1,14 +1,15 @@
 "use client";
 
 import { X, MessageCircle } from "lucide-react";
-import { urgencyData, WP_NUMBER } from "../data/urgency.data";
+import { buildWhatsAppUrl } from "@/app/Globals";
+import { urgencyData } from "../data/urgency.data";
 
 interface Props {
   onClose: () => void;
 }
 
 export const UrgencyModal = ({ onClose }: Props) => {
-  const wpUrl = `https://wa.me/${WP_NUMBER}?text=${encodeURIComponent(urgencyData.wpMessage)}`;
+  const wpUrl = buildWhatsAppUrl(urgencyData.wpMessage);
 
   return (
     <div

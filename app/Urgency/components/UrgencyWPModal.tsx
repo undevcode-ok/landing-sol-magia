@@ -1,8 +1,8 @@
 import { MessageCircle } from "lucide-react";
-import { WP_NUMBER } from "../data/urgency.data";
+import { buildWhatsAppUrl } from "@/app/Globals";
 
 export const UrgencyWPButton = () => {
-  const wpUrl = `https://wa.me/${WP_NUMBER}?text=${encodeURIComponent("Hola, quiero comunicarme")}`;
+  const wpUrl = buildWhatsAppUrl();
 
   return (
     <a

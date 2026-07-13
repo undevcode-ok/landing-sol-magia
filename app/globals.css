@@ -3,7 +3,8 @@
 :root {
 }
 
-@theme inline {
+@theme {
+  --font-serif: var(--font-cormorant);
 }
 
 @media () {
@@ -16,4 +17,9 @@ html {
 }
 
 body {
+}
+
+/* Fuente secundaria (Nanum Gothic) para UI: botones, tags, nav, textos de apoyo */
+.font-secondary {
+  font-family: var(--font-nanum), sans-serif;
 }

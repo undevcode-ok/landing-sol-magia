@@ -1,8 +1,8 @@
 import { NavLink, LogoData, CTAData } from "../types/navbar.types";
 
 export const logoData: LogoData = {
-  title: "Flama Ancestral",
-  subtitle: "Rituales & Hechizos",
+  logoImage: "/img/logo/logo.webp",
+  alt: "Sol Kees",
 };
 
 export const navLinks: NavLink[] = [

@@ -1,8 +1,8 @@
 "use client";
 
 import { X, MessageCircle } from "lucide-react";
+import { buildWhatsAppUrl } from "@/app/Globals";
 import { Servicie } from "../types/services.type";
-import { WP_NUMBER } from "../data/service.data";
 
 interface Props {
   servicio: Servicie;
@@ -10,22 +10,21 @@ interface Props {
 }
 
 export const ServicieModal = ({ servicio, onClose }: Props) => {
-  const wpMessage = encodeURIComponent(
+  const wpUrl = buildWhatsAppUrl(
     `Hola, quiero consultar sobre el servicio de ${servicio.title}`
   );
-  const wpUrl = `https://wa.me/${WP_NUMBER}?text=${wpMessage}`;
 
   return (
     <div
       className="fixed inset-0 bg-black/75 z-50 flex items-center justify-center p-6"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="bg-[#1c0a0a] rounded-2xl max-w-[460px] w-full overflow-hidden border border-[#3a1010]">
+      <div className="bg-zinc-900 rounded-2xl max-w-[640px] w-full max-h-[85vh] overflow-y-auto border border-violet-800/40">
         <div className="relative">
           <img
             src={servicio.img}
             alt={servicio.title}
-            className="w-full h-[190px] object-cover grayscale"
+            className="w-full h-[260px] object-cover"
           />
           <button
             onClick={onClose}
@@ -35,17 +34,17 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
             <X size={16} />
           </button>
         </div>
-        <div className="p-6">
-          <h3 className="text-white text-[17px] font-extrabold uppercase tracking-wide mb-3">
+        <div className="p-8">
+          <h3 className="text-white text-2xl font-extrabold uppercase tracking-wide mb-4">
             {servicio.title}
           </h3>
-          <p className="text-[#ccc] text-[13px] leading-[1.7] mb-6">
+          <p className="text-[#ccc] text-lg leading-[1.7] mb-6 whitespace-pre-line">
             {servicio.desc}
           </p>
           <div className="flex items-center justify-between gap-3">
             <button
               onClick={onClose}
-              className="border border-[#555] text-[#aaa] text-[13px] px-5 py-2 rounded-full bg-transparent cursor-pointer hover:border-[#888] transition-colors"
+              className="border border-[#555] text-[#aaa] text-lg px-5 py-2 rounded-full bg-transparent cursor-pointer hover:border-[#888] transition-colors"
             >
               Cerrar
             </button>
@@ -53,9 +52,9 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
               href={wpUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white text-[13px] font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors no-underline"
+              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white text-lg font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors no-underline"
             >
-              <MessageCircle size={15} />
+              {/*<MessageCircle size={18} />*/}
               Consultar por WhatsApp
             </a>
           </div>
