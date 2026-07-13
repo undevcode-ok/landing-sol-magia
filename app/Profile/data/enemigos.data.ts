@@ -9,6 +9,6 @@ export const enemigosData: EnemigosData = {
     "Yo soy tu mejor Amiga",
   ],
   backgroundImage:
-    "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1400&auto=format&fit=crop&q=80",
+    "/img/services/contacto.png",
   wpMessage: "Hola, quiero comunicarme",
 };

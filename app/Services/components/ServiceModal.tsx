@@ -35,16 +35,16 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
           </button>
         </div>
         <div className="p-8">
-          <h3 className="text-white text-2xl font-extrabold uppercase tracking-wide mb-4">
+          <h3 className="font-secondary text-white text-2xl font-extrabold uppercase tracking-wide mb-4">
             {servicio.title}
           </h3>
-          <p className="text-[#ccc] text-lg leading-[1.7] mb-6 whitespace-pre-line">
+          <p className="text-[#ccc] text-xl leading-[1.7] mb-6 whitespace-pre-line">
             {servicio.desc}
           </p>
           <div className="flex items-center justify-between gap-3">
             <button
               onClick={onClose}
-              className="border border-[#555] text-[#aaa] text-lg px-5 py-2 rounded-full bg-transparent cursor-pointer hover:border-[#888] transition-colors"
+              className="border border-[#555] text-[#aaa] text-xl px-5 py-2 rounded-full bg-transparent cursor-pointer hover:border-[#888] transition-colors"
             >
               Cerrar
             </button>
@@ -52,7 +52,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
               href={wpUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white text-lg font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors no-underline"
+              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white text-xl font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors no-underline"
             >
               {/*<MessageCircle size={18} />*/}
               Consultar por WhatsApp

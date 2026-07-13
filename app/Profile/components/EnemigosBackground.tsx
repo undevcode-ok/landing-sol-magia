@@ -6,9 +6,10 @@ export const EnemigosBackground = forwardRef<HTMLDivElement>((_, ref) => {
     <>
       <div
         ref={ref}
-        className="absolute inset-[-80px_0] bg-cover bg-center z-0 will-change-transform"
+        className="absolute inset-[-80px_0] bg-cover z-0 will-change-transform"
         style={{
           backgroundImage: `url('${enemigosData.backgroundImage}')`,
+          backgroundPosition: "center 20%",
           filter: "brightness(0.45) saturate(0.7)",
         }}
       />
