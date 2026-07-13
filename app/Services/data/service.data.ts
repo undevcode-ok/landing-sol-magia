@@ -12,13 +12,13 @@ export const servicios: Servicie[] = [
   {
     id: 2,
     title: "Videncia naturales específicas",
-    img: "/img/services/limpieza.webp",
+    img: "/img/services/videncia-especifica.png",
     desc: "En esta videncia, el consultante solo trata un área o tema específico de consulta. Durante la sesión, se puede desarrollar, ampliar y re-preguntar sobre el mismo.\n\nSolicitar turno previo.",
   },
   {
     id: 3,
     title: "Videncia natural express",
-    img: "/img/services/proteccion.webp",
+    img: "/img/services/videncia-express.png",
     desc: "Servicio express para que el consultante encuentre respuestas cortas, específicas y a la brevedad, permitiendo una rápida toma de decisiones o la solución de una situación.\n\nÚnicamente se admiten 3 preguntas.\n\nLas respuestas se entregan dentro del día.\n\nNo se puede desarrollar el tema.\n\nNo se necesita turno previo.",
   },
   {

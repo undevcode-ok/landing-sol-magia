@@ -29,7 +29,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
           <button
             onClick={onClose}
             aria-label="Cerrar modal"
-            className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 flex items-center justify-center text-white hover:bg-black/70 transition-colors"
+            className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 flex items-center justify-center text-white hover:bg-black/70 hover:text-violet-300 transition-colors"
           >
             <X size={16} />
           </button>
@@ -44,7 +44,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
           <div className="flex items-center justify-between gap-3">
             <button
               onClick={onClose}
-              className="border border-[#555] text-[#aaa] text-xl px-5 py-2 rounded-full bg-transparent cursor-pointer hover:border-[#888] transition-colors"
+              className="border border-[#555] text-[#aaa] text-xl px-5 py-2 rounded-full bg-transparent cursor-pointer hover:border-violet-300 hover:text-violet-300 transition-colors"
             >
               Cerrar
             </button>

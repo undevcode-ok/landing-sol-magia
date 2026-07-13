@@ -32,7 +32,7 @@ export const UrgencyCard = ({ onClick }: Props) => {
             alt={urgencyData.title}
             className="
               w-full
-              h-full
+              h-80
               min-h-[320px]
               object-cover
               transition-all

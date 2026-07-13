@@ -41,7 +41,7 @@ export const ServicieCard = ({ servicio, onClick }: Props) => {
   </div>
 
   <div className="p-5">
-    <h3 className="font-secondary text-white text-2xl font-semibold text-center uppercase">
+    <h3 className="font-secondary text-violet-300 text-2xl font-semibold text-center uppercase">
       {servicio.title}
     </h3>
 
