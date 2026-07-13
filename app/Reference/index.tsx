@@ -12,7 +12,7 @@ export const Reference = () => {
     <section id="references"
       className="py-[72px] px-12 flex flex-col items-center gap-12"
       style={{
-        background: "#3d0a0a",
+        background: "linear-gradient(180deg, #2e1065 0%, #000000 100%)",
       }}
     >
       <ReferenceHeader />

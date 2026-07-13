@@ -13,7 +13,7 @@ export const CarouselControls = ({ current, total, onPrev, onNext, onGoTo }: Pro
      <div className="flex items-center justify-center gap-4 mt-6">
       <button
         onClick={onPrev}
-        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-[rgba(240,96,96,0.3)] hover:border-[#581c87] transition-colors"
+        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-violet-300/30  hover:border-[#581c87] transition-colors"
         aria-label="Anterior"
       >
         <ChevronLeft size={18} />
@@ -34,7 +34,7 @@ export const CarouselControls = ({ current, total, onPrev, onNext, onGoTo }: Pro
       </div>
       <button
         onClick={onNext}
-        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-[rgba(240,96,96,0.3)] hover:border-[#581c87] transition-colors"
+        className="w-10 h-10 rounded-full bg-white/8 border border-white/15 text-white flex items-center justify-center hover:bg-violet-300/30  hover:border-[#581c87] transition-colors"
         aria-label="Siguiente"
       >
         <ChevronRight size={18} />

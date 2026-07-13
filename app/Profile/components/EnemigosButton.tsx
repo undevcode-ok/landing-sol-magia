@@ -12,7 +12,7 @@ export const EnemigosButton = () => {
       rel="noopener noreferrer"
       className="bg-[#581c87] hover:bg-[#3b0764] text-white text-[14px] font-medium px-8 py-3 rounded-full flex items-center gap-2 transition-colors no-underline"
     >
-      <MessageCircle size={16} />
+      {/*<MessageCircle size={16} />*/}
       Comunicarse
     </a>
   );

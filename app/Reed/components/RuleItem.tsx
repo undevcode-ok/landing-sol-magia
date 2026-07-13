@@ -51,7 +51,7 @@ export const RuleItem = ({ rule, align = "left" }: Props) => {
           duration-300
           ${
             rule.type === "no"
-              ? "bg-white/15 text-white border border-white/20"
+              ? "bg-red-500/15 text-white border border-white/20"
               : "bg-emerald-500/15 text-emerald-300 border border-emerald-400/20"
           }
         `}
@@ -61,7 +61,7 @@ export const RuleItem = ({ rule, align = "left" }: Props) => {
 
       <span
         className="
-          text-sm
+          text-lg
           leading-relaxed
           font-medium
           text-white

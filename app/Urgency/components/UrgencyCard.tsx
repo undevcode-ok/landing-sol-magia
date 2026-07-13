@@ -43,11 +43,11 @@ export const UrgencyCard = ({ onClick }: Props) => {
         </div>
 
         <div className="flex flex-1 flex-col justify-center px-10 py-10">
-          <h3 className="mb-4 text-3xl font-semibold text-white">
+          <h3 className="font-secondary min-h-[64px] flex  text-violet-300 text-2xl font-semibold text-center uppercase">
             {urgencyData.title}
           </h3>
 
-          <p className="mb-8 max-w-4xl text-base leading-8 text-zinc-300">
+          <p className="text-zinc-300 mb-8 text-xl font-bold max-w-4xl text-base leading-8">
             {urgencyData.shortDesc}
           </p>
 

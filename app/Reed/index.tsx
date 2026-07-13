@@ -21,7 +21,7 @@ export const Reed = () => {
         gap-14
       "
       style={{
-        background: "linear-gradient(180deg, #3d0a0a 0%, #2b0707 100%)",
+        background: "#2e1065",
       }}
     >
       <ReedHeader />

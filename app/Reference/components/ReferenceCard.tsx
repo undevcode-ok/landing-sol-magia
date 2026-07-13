@@ -28,7 +28,7 @@ export const ReferenceCard = ({ referencia }: Props) => {
         style={{ filter: "grayscale(0.3)" }}
       />
       <div className="p-5 flex flex-col gap-3 flex-1">
-        <div className="text-[#f06060] text-4xl tracking-widest">★★★★★</div>
+        <div className="text-violet-300 text-4xl tracking-widest">★★★★★</div>
         <p className="text-white/80 text-xl leading-[1.65] italic flex-1">
           "{referencia.text}"
         </p>

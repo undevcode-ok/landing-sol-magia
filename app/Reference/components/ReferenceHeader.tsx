@@ -7,7 +7,12 @@ export const ReferenceHeader = () => {
       <p className="text-white/45 text-2xl leading-relaxed max-w-2xl mx-auto">
         Mis referencias, eficacia y trayectoria se pueden corroborar en historias destacadas de Instagram Clientes.
       </p>
-      <div className="w-10 h-[2px] bg-[#f06060] rounded-full mx-auto mt-4" />
+      <div className="w-16
+          h-[3px]
+          bg-violet-300
+          rounded-full
+          mx-auto
+          mt-5" />
     </div>
   );
 };

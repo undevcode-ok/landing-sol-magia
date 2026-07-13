@@ -34,7 +34,7 @@ export const ReedHeader = () => {
         className="
           w-16
           h-[3px]
-          bg-[#f06060]
+          bg-violet-300
           rounded-full
           mx-auto
           mt-5

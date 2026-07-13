@@ -4,7 +4,7 @@ import { SocialIcon } from "./SocialIcon";
 export const FooterSocialAndPayment = () => {
   return (
     <div>
-      <p className="text-white text-[12px] font-bold tracking-[2px] uppercase mb-5">
+      <p className="text-white text-base font-bold tracking-[2px] uppercase mb-5">
         Redes Sociales
       </p>
       <div className="flex gap-3 mb-6">
@@ -13,7 +13,7 @@ export const FooterSocialAndPayment = () => {
         ))}
       </div>
 
-      <p className="text-white/30 text-[11px] tracking-[2px] uppercase mb-3">
+      <p className="text-white font-bold text-base tracking-[2px] uppercase mb-3">
         Medios de Pago
       </p>
       <div className="flex flex-wrap gap-2">

@@ -19,7 +19,7 @@ export const SocialIcon = ({ link }: Props) => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={link.label}
-      className="w-10 h-10 rounded-[10px] bg-white/6 border border-white/10 flex items-center justify-center text-white/60 hover:bg-[rgba(240,96,96,0.2)] hover:border-[#f06060] hover:text-[#f06060] transition-all no-underline"
+      className="w-10 h-10 rounded-[10px] bg-white/6 border border-white/10 flex items-center justify-center text-white/60 hover:bg-violet-300/40 hover:border-violet-300 hover:text-violet-300 transition-all no-underline"
     >
       <Icon size={16} />
     </a>

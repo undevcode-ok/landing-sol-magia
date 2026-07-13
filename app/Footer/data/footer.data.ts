@@ -3,10 +3,10 @@ import { buildWhatsAppUrl } from "@/app/Globals";
 
 export const footerData: FooterData = {
   brand: {
-    title: "Flama Ancestral",
-    subtitle: "Rituales & Hechizos",
+    title: "Sol Kees",
+    subtitle: "LLave Mágica",
     description:
-      "Atención a distancia en toda Argentina. Ciudad Autónoma de Buenos Aires, Palermo Hollywood.",
+      "Lic. en Psicología Holística Lic. en Psicología Holística, Videncias Grafológicas, Reconectando con tú Consciencia de Ser ,El éxito de una vida y El método",
   },
   navLinks: [
     { label: "Inicio", href: "#hero" },

@@ -14,8 +14,8 @@ export const Urgency = () => {
       <UrgencyWPButton />
       {isOpen && <UrgencyModal onClose={closeModal} />}
  
-      {/* Fade inferior hacia rojo sangre */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#3d0a0a] pointer-events-none" />
+      {/* Fade inferior hacia violeta oscuro */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#2e1065] pointer-events-none" />
     </section>
   );
 };
