@@ -1,6 +1,5 @@
 import { EnemigosData } from "../types/enemigos.type";
 
-export const WP_NUMBER = "5491100000000";
 
 export const enemigosData: EnemigosData = {
   lines: [

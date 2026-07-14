@@ -6,5 +6,5 @@ export const heroData: HeroData = {
   description:
     "Más de 20 años de experiencia y los clientes que continúan confiando en mí a lo largo del tiempo avalan mi eficacia.",
   backgroundImage:
-  "/img/hero/wallpaper_6.png",
+  "/img/hero/hero.webp",
 };

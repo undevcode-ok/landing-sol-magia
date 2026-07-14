@@ -10,6 +10,5 @@ export interface LogoData {
 
 export interface CTAData {
   label: string;
-  href: string;
   ariaLabel: string;
 }

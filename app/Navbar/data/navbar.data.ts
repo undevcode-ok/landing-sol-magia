@@ -14,6 +14,5 @@ export const navLinks: NavLink[] = [
 
 export const ctaData: CTAData = {
   label: "Comunicarse",
-  href: "https://wa.me/TUNUMERO",
   ariaLabel: "Contactar por WhatsApp",
 };
