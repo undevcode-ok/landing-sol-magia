@@ -8,6 +8,6 @@ export const enemigosData: EnemigosData = {
     "Yo soy tu mejor Amiga",
   ],
   backgroundImage:
-    "/img/services/contacto.png",
+    "/img/enemy/contacto.webp",
   wpMessage: "Hola, quiero comunicarme",
 };
