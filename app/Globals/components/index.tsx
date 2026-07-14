@@ -18,7 +18,7 @@ export const StickyButtons = () => {
       <button
         onClick={scrollToTop}
         aria-label="Volver arriba"
-        className="fixed  bottom-12 left-6 z-50 w-20 h-20 rounded-full bg-[rgba(255,255,255,0.15)] border border-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-[#8b2500] hover:border-[#8b2500] transition-all duration-200"
+        className="fixed  bottom-12 left-6 z-50 w-20 h-20 rounded-full bg-[rgba(255,255,255,0.15)] border border-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-violet-300/40 hover:bg-violet-300/40 transition-all duration-200"
       >
         <ChevronUp size={32} />
       </button>

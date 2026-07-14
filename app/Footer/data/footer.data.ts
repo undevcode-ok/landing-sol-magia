@@ -16,32 +16,25 @@ export const footerData: FooterData = {
 
   ],
   socialLinks: [
-    { id: 1, label: "Facebook", href: "https://facebook.com", icon: "facebook" },
-    { id: 2, label: "Instagram", href: "https://instagram.com", icon: "instagram" },
-    { id: 3, label: "WhatsApp", href: buildWhatsAppUrl(), icon: "whatsapp" },
+    { id: 1, label: "Instagram", href: "https://www.instagram.com/solkeesok/", icon: "instagram" },
   ],
   paymentMethods: [
   {
     id: 1,
-    name: "Visa",
-    logo: "https://cdn.simpleicons.org/visa", // tu asset local
+    name: "Mercado Pago",
+    logo: "https://cdn.simpleicons.org/mercadopago", // tu asset local
   },
   {
     id: 2,
-    name: "Visa",
-    logo: "https://cdn.simpleicons.org/visa",
+    name: "Western Union",
+    logo: "https://cdn.simpleicons.org/westernunion",
   },
   {
     id: 3,
-    name: "Mastercard",
-    logo: "https://cdn.simpleicons.org/mastercard",
-  },
-  {
-    id: 4,
-    name: "Mastercard",
-    logo: "https://cdn.simpleicons.org/mastercard",
+    name: "Prex",
+    logo: "https://cdn.simpleicons.org/prex",
   },
 ],
-  copyright: "Flama Ancestral",
+  copyright: "Sol Kees",
   madeWith: "Hecho con ♥ por el equipo de Undevcode",
 };
