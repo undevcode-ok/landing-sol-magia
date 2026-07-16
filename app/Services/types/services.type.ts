@@ -3,4 +3,5 @@ export interface Servicie {
   title: string;
   img: string;
   desc: string;
+  items?: string[];
 }

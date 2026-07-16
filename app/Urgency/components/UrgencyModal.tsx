@@ -16,7 +16,7 @@ export const UrgencyModal = ({ onClose }: Props) => {
       className="fixed inset-0 bg-black/75 z-50 flex items-center justify-center p-6"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="bg-zinc-900 rounded-2xl max-w-[640px] w-full max-h-[85vh] overflow-y-auto border border-violet-800/40">
+      <div className="bg-zinc-900 rounded-2xl max-w-[640px] w-full max-h-[85vh] overflow-y-auto no-scrollbar border border-violet-800/40">
         <div className="relative">
           <img
             src={urgencyData.img}
@@ -60,4 +60,3 @@ export const UrgencyModal = ({ onClose }: Props) => {
     </div>
   );
 };
-
