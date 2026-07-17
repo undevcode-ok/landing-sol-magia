@@ -1,9 +1,22 @@
-import { Smile, Camera, MessageCircle } from "lucide-react";
+import { Smile, MessageCircle } from "lucide-react";
+import { siInstagram } from "simple-icons";
 import { SocialLink } from "../types/footer.types";
+
+const InstagramIcon = ({ size = 16 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d={siInstagram.path} />
+  </svg>
+);
 
 const iconMap = {
   facebook: Smile,
-  instagram: Camera,
+  instagram: InstagramIcon,
   whatsapp: MessageCircle,
 };
 

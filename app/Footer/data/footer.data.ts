@@ -1,40 +1,46 @@
+import { siMercadopago, siWesternunion } from "simple-icons";
 import { FooterData } from "../types/footer.types";
-import { buildWhatsAppUrl } from "@/app/Globals";
 
 export const footerData: FooterData = {
   brand: {
-    title: "Sol Kees",
+    logoImage: "/img/logo/logo.webp",
+    alt: "Sol Kees",
     subtitle: "LLave Mágica",
     description:
       "Lic. en Psicología Holística Lic. en Psicología Holística, Videncias Grafológicas, Reconectando con tú Consciencia de Ser ,El éxito de una vida y El método",
   },
   navLinks: [
     { label: "Inicio", href: "#hero" },
-  { label: "Servicios", href: "#services" },
-  { label: "Aclaraciones", href: "#urgency" },
-  { label: "Referencias", href: "#references" },
-
+    { label: "Servicios", href: "#services" },
+    { label: "Aclaraciones", href: "#urgency" },
+    { label: "Referencias", href: "#references" },
   ],
   socialLinks: [
     { id: 1, label: "Instagram", href: "https://www.instagram.com/solkeesok/", icon: "instagram" },
   ],
+  phoneNumbers: ["(011) 7894-5333", "(2944) 348887"],
   paymentMethods: [
-  {
-    id: 1,
-    name: "Mercado Pago",
-    logo: "https://cdn.simpleicons.org/mercadopago", // tu asset local
-  },
-  {
-    id: 2,
-    name: "Western Union",
-    logo: "https://cdn.simpleicons.org/westernunion",
-  },
-  {
-    id: 3,
-    name: "Prex",
-    logo: "https://cdn.simpleicons.org/prex",
-  },
-],
+    {
+      id: 1,
+      name: "Mercado Pago",
+      iconPath: siMercadopago.path,
+      iconColor: `#${siMercadopago.hex}`,
+    },
+    {
+      id: 2,
+      name: "Western Union",
+      iconPath: siWesternunion.path,
+      iconColor: `#${siWesternunion.hex}`,
+    },
+    {
+      id: 3,
+      name: "Prex",
+      // Prex no está en simple-icons; se usa el favicon público del sitio oficial.
+      logo: "https://icons.duckduckgo.com/ip3/prexcard.com.ar.ico",
+    },
+  ],
   copyright: "Sol Kees",
   madeWith: "Hecho con ♥ por el equipo de Undevcode",
+  // TODO: reemplazar por la URL real del sitio de Undevcode.
+  madeWithLink: "https://undevcode.com",
 };

@@ -8,7 +8,9 @@ export interface SocialLink {
 export interface PaymentMethod {
   id: number;
   name: string;
-  logo: string;
+  logo?: string;
+  iconPath?: string;
+  iconColor?: string;
 }
 
 export interface NavLink {
@@ -18,13 +20,16 @@ export interface NavLink {
 
 export interface FooterData {
   brand: {
-    title: string;
+    logoImage: string;
+    alt: string;
     subtitle: string;
     description: string;
   };
   navLinks: NavLink[];
   socialLinks: SocialLink[];
+  phoneNumbers: string[];
   paymentMethods: PaymentMethod[];
   copyright: string;
   madeWith: string;
+  madeWithLink: string;
 }
