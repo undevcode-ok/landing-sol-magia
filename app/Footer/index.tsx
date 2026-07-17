@@ -7,7 +7,7 @@ import { FooterBottom } from "./components/FooterBottom";
 export const Footer = () => {
   return (
     <footer className="bg-[#111] border-t-2 border-violet-600/70">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10 max-w-7xl mx-auto px-10 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10 max-w-8xl mx-auto px-30 py-10">
         <FooterBrand />
         <FooterNav />
         <FooterContact />

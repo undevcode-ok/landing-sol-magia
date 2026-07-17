@@ -3,11 +3,11 @@ import { FooterData } from "../types/footer.types";
 
 export const footerData: FooterData = {
   brand: {
-    logoImage: "/img/logo/logo.webp",
+    logoImage: "/img/logo/marca.webp",
     alt: "Sol Kees",
     subtitle: "LLave Mágica",
     description:
-      "Lic. en Psicología Holística Lic. en Psicología Holística, Videncias Grafológicas, Reconectando con tú Consciencia de Ser ,El éxito de una vida y El método",
+      "Lic. en Psicología Holística, Videncias Grafológicas. Reconectando con tu Consciencia de Ser, el éxito de una vida y el método.",
   },
   navLinks: [
     { label: "Inicio", href: "#hero" },

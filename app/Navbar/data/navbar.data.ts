@@ -1,7 +1,7 @@
 import { NavLink, LogoData, CTAData } from "../types/navbar.types";
 
 export const logoData: LogoData = {
-  logoImage: "/img/logo/logo.webp",
+  logoImage: "/img/logo/marca.webp",
   alt: "Sol Kees",
 };
 

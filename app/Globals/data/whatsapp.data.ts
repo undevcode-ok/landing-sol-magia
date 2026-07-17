@@ -5,4 +5,4 @@
  */
 export const WP_NUMBER = "5491178945333";
 
-export const WP_DEFAULT_MESSAGE = "Hola, quiero comunicarme";
+export const WP_DEFAULT_MESSAGE = "¡Hola! Estuve visitando tu página web y quisiera ponerme en contacto con vos para hacer una consulta.";

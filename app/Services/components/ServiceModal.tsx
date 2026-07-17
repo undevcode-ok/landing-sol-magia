@@ -12,7 +12,7 @@ interface Props {
 
 export const ServicieModal = ({ servicio, onClose }: Props) => {
   const wpUrl = buildWhatsAppUrl(
-    `Hola, quiero consultar sobre el servicio de ${servicio.title}`
+    `¡Hola! Estuve visitando tu página web y quisiera ponerme en contacto con vos para hacer una consulta sobre el servicio de ${servicio.title}`
   );
   const { textRef, isExpanded, canExpand, toggle, COLLAPSED_HEIGHT_PX } =
     useExpandableText();

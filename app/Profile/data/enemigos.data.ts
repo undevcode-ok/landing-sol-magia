@@ -9,5 +9,5 @@ export const enemigosData: EnemigosData = {
   ],
   backgroundImage:
     "/img/enemy/contacto.webp",
-  wpMessage: "Hola, quiero comunicarme",
+  wpMessage: "¡Hola! Estuve visitando tu página web y quisiera ponerme en contacto con vos para hacer una consulta.",
 };
