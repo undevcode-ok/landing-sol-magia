@@ -13,7 +13,7 @@ export const ReferenceCard = ({ referencia }: Props) => {
       </p>
       <div>
         <p className="text-white text-lg font-semibold">{referencia.name}</p>
-        <p className="text-white/40 text-sm">{referencia.location}</p>
+        
       </div>
     </div>
   );
