@@ -48,7 +48,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
               style={{
                 maxHeight: isExpanded ? "1000px" : `${COLLAPSED_HEIGHT_PX}px`,
               }}
-              className="text-[#ccc] text-xl leading-[1.7] whitespace-pre-line overflow-hidden transition-all duration-300 ease-in-out"
+              className="text-[#ccc] text-xl  leading-[1.7] whitespace-pre-line overflow-hidden transition-all duration-300 ease-in-out"
             >
               {servicio.desc}
             </p>
@@ -60,7 +60,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
           {canExpand && (
             <button
               onClick={toggle}
-              className="mt-2 flex items-center gap-1 text-violet-300 text-base font-medium hover:text-violet-200 transition-colors"
+              className="mt-2 flex items-center gap-1 text-violet-300 text-lg font-medium hover:text-violet-200 transition-colors"
             >
               {isExpanded ? "Ver menos" : "Ver más"}
               <ChevronDown
@@ -76,7 +76,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
             <>
               <div className="mt-6 flex items-center justify-center gap-3">
                 <div className="h-px w-8 bg-violet-700/50" />
-                <span className="uppercase tracking-[0.2em] text-xs font-semibold text-violet-300">
+                <span className="uppercase lg:tracking-[0.2em]  text-base sm:text-base lg:text-lg font-semibold text-violet-300">
                   Condiciones del servicio
                 </span>
                 <div className="h-px w-8 bg-violet-700/50" />
@@ -86,7 +86,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
                 {servicio.items.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2.5 text-zinc-200 text-lg leading-snug tracking-wide"
+                    className="flex items-start gap-2.5 text-zinc-200 text-xl leading-snug tracking-wide"
                   >
                     <CircleCheck
                       size={18}
@@ -102,7 +102,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
           <div className="flex items-center justify-between gap-3 mt-6">
             <button
               onClick={onClose}
-              className="font-secondary border border-[#555]  transition-colors text-white text-sm font-bold uppercase tracking-widest px-10 py-4  gap-3 rounded-full flex items-center no-underline cursor-pointer  hover:border-violet-300 hover:text-violet-300"
+              className="font-secondary border border-[#555]  transition-colors text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4  gap-3 rounded-full flex items-center no-underline cursor-pointer  hover:border-violet-300 hover:text-violet-300"
             >
               Cerrar
             </button>
@@ -110,7 +110,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
               href={wpUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-secondary bg-[#581c87] hover:bg-[#3b0764] text-white text-sm font-bold uppercase tracking-widest px-10 py-4 rounded-full flex items-center gap-3 transition-colors no-underline"
+              className="font-secondary bg-[#581c87] hover:bg-[#3b0764] text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4 rounded-full flex items-center gap-3 transition-colors no-underline"
             >
               Solicitar turno
             </a>

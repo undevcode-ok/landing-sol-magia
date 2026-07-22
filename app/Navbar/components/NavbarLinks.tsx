@@ -25,7 +25,7 @@ export const NavbarLinks = ({
             <Link
               href={link.href}
               onClick={onLinkClick}
-              className={`font-secondary text-lg font-normal transition-colors duration-200 no-underline ${activeLink === link.href
+              className={`font-secondary text-base lg:text-lg xl:text-xl font-normal transition-colors duration-200 no-underline ${activeLink === link.href
                   ? "text-white"
                   : "text-[#e0d8d8] hover:text-white"
                 }`}

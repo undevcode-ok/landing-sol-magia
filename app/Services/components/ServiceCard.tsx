@@ -52,11 +52,11 @@ export const ServicieCard = ({ servicio, onClick, index = 0 }: Props) => {
       </div>
 
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-secondary min-h-[64px] flex items-start justify-center text-violet-300 text-2xl font-semibold text-center uppercase">
+        <h3 className="font-secondary min-h-[64px] flex items-start justify-center text-violet-300 text-2xl  font-semibold text-center uppercase">
           {servicio.title}
         </h3>
 
-        <p className="text-zinc-400 min-h-[72px] text-xl font-bold mt-5 line-clamp-3 leading-6 text-left">
+        <p className="text-zinc-400 min-h-[72px] text-xl sm:text-xl lg:text-lg font-bold mt-5 line-clamp-3 leading-6 text-left">
           {servicio.desc}
         </p>
 
@@ -67,7 +67,7 @@ export const ServicieCard = ({ servicio, onClick, index = 0 }: Props) => {
             className="
               uppercase
               tracking-[0.2em]
-              text-sm
+              text-base
               font-semibold
               text-violet-300
               transition-colors
