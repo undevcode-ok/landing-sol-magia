@@ -1,19 +1,17 @@
 import { NavLink, LogoData, CTAData } from "../types/navbar.types";
 
 export const logoData: LogoData = {
-  title: "Flama Ancestral",
-  subtitle: "Rituales & Hechizos",
+  logoImage: "/img/logo/marca.webp",
+  alt: "Sol Kees",
 };
 
 export const navLinks: NavLink[] = [
-  { label: "Inicio", href: "/" },
-  { label: "Servicios", href: "/servicios" },
-  { label: "Referencias", href: "/referencias" },
-  { label: "Aclaraciones", href: "/aclaraciones" },
+  { label: "Servicios", href: "#services" },
+  { label: "Aclaraciones", href: "#reed" },
+  { label: "Referencias", href: "#references" },
 ];
 
 export const ctaData: CTAData = {
   label: "Comunicarse",
-  href: "https://wa.me/TUNUMERO",
   ariaLabel: "Contactar por WhatsApp",
 };

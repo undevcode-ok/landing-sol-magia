@@ -3,15 +3,34 @@
 :root {
 }
 
-@theme inline {
+@theme {
+  --font-serif: var(--font-cormorant);
 }
 
 @media () {
   :root {
-   
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  
+  background-color: #111;
+}
+
+/* Fuente secundaria (Nanum Gothic) para UI: botones, tags, nav, textos de apoyo */
+.font-secondary {
+  font-family: var(--font-nanum), sans-serif;
+}
+
+/* Oculta la barra de scroll visualmente sin perder el scroll funcional */
+@utility no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }

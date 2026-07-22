@@ -1,14 +1,12 @@
 import { UrgencyData } from "../types/urgency.types";
 
 
-export const WP_NUMBER = "5491100000000";
-
 export const urgencyData: UrgencyData = {
-  title: "Urgencias (100% Recargo)",
+  title: "Importante",
   shortDesc:
-    "Las consultas de videncia o cualquier servicio solicitado de urgencia, sin turno previo y fuera de horario laboral/durante vacaciones, tienen un recargo del 100% sobre el valor habitual. La atención es inmediata, únicamente con comprobante de pago enviado por WhatsApp.",
+    "Los trabajos únicamente serán abonados previamente y deberá enviarse el comprobante de transferencia para poder contar con un turno y/o la realización del trabajo.\n\nUna vez realizado el pago y asignado el turno, no se admitirán reemplazos, cancelaciones, devoluciones ni reprogramaciones.",
   fullDesc:
-    "Las consultas de urgencia se atienden sin turno previo y fuera del horario laboral habitual. Este servicio tiene un recargo del 100% sobre el valor normal. La atención es inmediata y personalizada. Para acceder al servicio de urgencia debés enviar el comprobante de pago por WhatsApp antes de la sesión.",
-  img: "/img/services/urgencia.webp",
+    "Los trabajos únicamente serán abonados previamente y deberá enviarse el comprobante de transferencia para poder contar con un turno y/o la realización del trabajo.\n\nUna vez realizado el pago y asignado el turno, no se admitirán reemplazos, cancelaciones, devoluciones ni reprogramaciones.",
+  img: "/img/services/importante.webp",
   wpMessage: "Hola, quiero consultar sobre el servicio de Urgencias",
 };

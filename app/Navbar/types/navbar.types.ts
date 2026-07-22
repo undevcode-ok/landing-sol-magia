@@ -4,12 +4,11 @@ export interface NavLink {
 }
 
 export interface LogoData {
-  title: string;
-  subtitle: string;
+  logoImage: string;
+  alt: string;
 }
 
 export interface CTAData {
   label: string;
-  href: string;
   ariaLabel: string;
 }

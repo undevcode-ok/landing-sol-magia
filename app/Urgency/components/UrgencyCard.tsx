@@ -1,31 +1,65 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { urgencyData } from "../data/urgency.data";
 
-interface Props {
-  onClick: () => void;
-}
 
-export const UrgencyCard = ({ onClick }: Props) => {
+
+export const UrgencyCard = () => {
   return (
-    <div
-      onClick={onClick}
-      className="bg-[#f06060] rounded-2xl flex items-center gap-8 p-5 pr-9 max-w-[1000px] w-full cursor-pointer transition-transform duration-200  group"
+    <motion.div
+      
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -8 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="
+        group
+        overflow-hidden
+        rounded-3xl
+        w-full
+        max-w-7xl
+        mx-auto
+        bg-zinc-900
+        border
+        border-transparent
+        shadow-lg
+        shadow-black/40
+        transition-colors
+        duration-300
+        hover:border-violet-500
+      "
     >
-      <img
-        src={urgencyData.img}
-        alt={urgencyData.title}
-        className="w-[220px] min-w-[220px] aspect-square object-cover rounded-xl transition-all duration-500 grayscale-0 group-hover:grayscale"
-      />
-      <div className="flex-1">
-        <p className="text-2xl uppercase text-[#1a0000] mb-3 tracking-wide">
-          {urgencyData.title}
-        </p>
-        <p className="text-lg text-[#1a0000] leading-[1.75] mb-4">
-          {urgencyData.shortDesc}
-        </p>
-        <button className="text-lg font-medium text-[#1a0000] hover:text-white bg-transparent border-none cursor-pointer p-0">
-          Ver más →
-        </button>
+      <div className="flex flex-col md:flex-row">
+        <div className="overflow-hidden md:w-[360px] shrink-0">
+          <img
+            src={urgencyData.img}
+            alt={urgencyData.title}
+            className="
+              w-full
+              h-80
+              min-h-[320px]
+              object-cover
+              transition-all
+              duration-700
+              group-hover:scale-105
+            "
+          />
+        </div>
+
+        <div className="flex flex-1 flex-col justify-center p-6 md:px-10 md:py-10">
+          <h3 className="font-secondary min-h-[64px] flex  text-violet-300 text-2xl font-semibold text-center uppercase">
+            {urgencyData.title}
+          </h3>
+
+          <p className="text-zinc-300 mb-8 text-xl sm:text-xl lg:text-2xlfont-bold max-w-4xl leading-8">
+            {urgencyData.shortDesc}
+          </p>
+
+          
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
