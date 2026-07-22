@@ -1,8 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { data } from "../data/reed.data";
 
 export const ReedImage = () => {
   return (
-    <div className="relative flex-shrink-0 overflow-hidden rounded-3xl">
+    <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="relative flex-shrink-0 overflow-hidden rounded-3xl"
+    >
       <img
         src={data.img}
         alt={data.title}
@@ -32,6 +41,6 @@ export const ReedImage = () => {
           pointer-events-none
         "
       />
-    </div>
+    </motion.div>
   );
 };

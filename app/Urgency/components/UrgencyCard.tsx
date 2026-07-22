@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { urgencyData } from "../data/urgency.data";
 
 interface Props {
@@ -6,8 +9,13 @@ interface Props {
 
 export const UrgencyCard = ({ onClick }: Props) => {
   return (
-    <div
+    <motion.div
       onClick={onClick}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -8 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className="
         group
         cursor-pointer
@@ -21,9 +29,8 @@ export const UrgencyCard = ({ onClick }: Props) => {
         border-transparent
         shadow-lg
         shadow-black/40
-        transition-all
+        transition-colors
         duration-300
-        hover:-translate-y-2
         hover:border-violet-500
       "
     >
@@ -77,6 +84,6 @@ export const UrgencyCard = ({ onClick }: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

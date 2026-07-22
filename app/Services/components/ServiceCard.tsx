@@ -1,14 +1,23 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Servicie } from "../types/services.type";
 
 interface Props {
   servicio: Servicie;
   onClick: (servicio: Servicie) => void;
+  index?: number;
 }
 
-export const ServicieCard = ({ servicio, onClick }: Props) => {
+export const ServicieCard = ({ servicio, onClick, index = 0 }: Props) => {
   return (
-    <div
+    <motion.div
       onClick={() => onClick(servicio)}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -8 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
       className="
         group
         cursor-pointer
@@ -19,9 +28,8 @@ export const ServicieCard = ({ servicio, onClick }: Props) => {
         border-violet-800/40
         shadow-lg
         shadow-black/40
-        transition-all
+        transition-colors
         duration-300
-        hover:-translate-y-2
         hover:border-violet-500
         flex
         flex-col
@@ -73,6 +81,6 @@ export const ServicieCard = ({ servicio, onClick }: Props) => {
           <div className="h-px w-8 bg-violet-700/50" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

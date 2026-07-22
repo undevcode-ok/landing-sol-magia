@@ -3,17 +3,13 @@ import { RuleItem } from "./RuleItem";
 
 interface Props {
   rules: Rule[];
- 
 }
 
 export const ReedRules = ({ rules }: Props) => {
   return (
     <div className="flex flex-col gap-4">
-      {rules.map((rule) => (
-        <RuleItem
-          key={rule.id}
-          rule={rule}
-        />
+      {rules.map((rule, index) => (
+        <RuleItem key={rule.id} rule={rule} index={index} />
       ))}
     </div>
   );

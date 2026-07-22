@@ -1,14 +1,23 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Rule } from "../types/reed.types";
 
 interface Props {
   rule: Rule;
   align?: "left" | "right";
+  index?: number;
 }
 
-export const RuleItem = ({ rule, align = "left" }: Props) => {
+export const RuleItem = ({ rule, align = "left", index = 0 }: Props) => {
   const isRight = align === "right";
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: isRight ? 30 : -30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      whileHover={{ y: -4 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
       className={`
         group
         cursor-pointer
@@ -24,9 +33,8 @@ export const RuleItem = ({ rule, align = "left" }: Props) => {
         py-4
         shadow-lg
     shadow-black/40
-        transition-all
+        transition-colors
         duration-300
-        hover:-translate-y-2
         hover:border-violet-500
 
         ${
@@ -69,6 +77,6 @@ export const RuleItem = ({ rule, align = "left" }: Props) => {
       >
         {rule.text}
       </span>
-    </div>
+    </motion.div>
   );
 };

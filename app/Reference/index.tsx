@@ -18,8 +18,8 @@ export const Reference = () => {
       <ReferenceHeader />
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visibleRefs.map((ref) => (
-            <ReferenceCard key={ref.id} referencia={ref} />
+          {visibleRefs.map((ref, index) => (
+            <ReferenceCard key={ref.id} referencia={ref} index={index} />
           ))}
         </div>
 
@@ -30,8 +30,8 @@ export const Reference = () => {
                 showAll ? "max-h-[3000px] opacity-100 mt-6" : "max-h-0 opacity-0"
               }`}
             >
-              {hiddenRefs.map((ref) => (
-                <ReferenceCard key={ref.id} referencia={ref} />
+              {hiddenRefs.map((ref, index) => (
+                <ReferenceCard key={ref.id} referencia={ref} index={index} />
               ))}
             </div>
 
