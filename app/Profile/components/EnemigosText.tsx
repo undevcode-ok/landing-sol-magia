@@ -26,7 +26,7 @@ export const EnemigosText = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
-      className="text-white text-[52px] font-bold leading-[1.2] text-center"
+      className="text-white text-4xl  lg:text-5xl xl:text-[52px] font-bold leading-[1.2] text-center"
       style={{ textShadow: "0 2px 20px rgba(0,0,0,0.6)" }}
     >
       {enemigosData.lines.map((text, i) => (
