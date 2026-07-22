@@ -25,7 +25,7 @@ export const HeroTitle = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase leading-[1.0] tracking-wide mb-7"
+      className="text-white text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold uppercase leading-[1.0] tracking-wide mb-7"
     >
       {heroData.title.map((text, i) => (
         <motion.span key={i} variants={lineVariants} className="block">
