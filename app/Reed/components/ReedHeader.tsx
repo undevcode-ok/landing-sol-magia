@@ -6,8 +6,8 @@ export const ReedHeader = () => {
       <h2
         className="
           text-white
-          text-5xl
-          md:text-6xl
+          text-4xl
+          lg:text-8xl
           font-bold
           tracking-tight
           leading-none
@@ -21,8 +21,8 @@ export const ReedHeader = () => {
         className="
           max-w-2xl
           mx-auto
-          text-lg
-          md:text-xl
+          text-2xl
+          lg:text-4xl
           text-white/70
           leading-relaxed
         "
@@ -32,7 +32,7 @@ export const ReedHeader = () => {
 
       <div
         className="
-          w-16
+          w-25
           h-[3px]
           bg-violet-300
           rounded-full

@@ -47,13 +47,20 @@ export const RuleItem = ({ rule, align = "left", index = 0 }: Props) => {
       <div
         className={`
           flex
-          h-11
-          w-11
-          min-w-11
+          h-9
+          w-9
+          min-w-9
+          sm:h-10
+          sm:w-10
+          sm:min-w-10
+          lg:h-11
+          lg:w-11
+          lg:min-w-11
           items-center
           justify-center
           rounded-full
-          text-base
+          text-sm
+          sm:text-base
           font-bold
           transition-all
           duration-300
