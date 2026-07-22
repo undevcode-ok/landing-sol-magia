@@ -10,10 +10,10 @@ export const FooterBottom = () => {
       </p>
       <div
 
-        className="text-white/20 text-base no-underline"
+        className="text-white/20 text-base  no-underline"
       >
         Hecho con{" "}
-        <span className="hover:text-violet-300 transition-colors cursor-pointer">♥</span>{" "}
+        <span className="hover:text-violet-300 transition-colors">♥</span>{" "}
         por el equipo de{" "}
         <span className="hover:text-violet-300 transition-colors">
           <a

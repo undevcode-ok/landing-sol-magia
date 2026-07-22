@@ -11,10 +11,10 @@ export const FooterBrand = () => {
           alt={brand.alt}
           width={100}
           height={100}
-          className="h-25 w-25 object-contain"
+          className="h-25 w-25  object-contain"
         />
         <div>
-          <p className="text-white text-4xl font-bold tracking-wide uppercase leading-tight">
+          <p className="text-white text-4xl  font-bold tracking-wide uppercase leading-tight">
             {brand.alt}
           </p>
           <p className="text-violet-300 text-2xl tracking-wide">{brand.subtitle}</p>

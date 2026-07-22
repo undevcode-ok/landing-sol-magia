@@ -5,7 +5,7 @@ import { SocialIcon } from "./SocialIcon";
 export const FooterContact = () => {
   return (
     <div>
-      <p className="text-white text-base font-bold tracking-[2px] uppercase mb-4">
+      <p className="text-white text-xl font-bold tracking-[2px] uppercase mb-4">
         Contacto
       </p>
       <div className="flex gap-3 mb-4">
@@ -18,7 +18,7 @@ export const FooterContact = () => {
         {footerData.phoneNumbers.map((phone) => (
           <p
             key={phone}
-            className="flex items-center gap-2 text-white/45 text-sm"
+            className="flex items-center gap-2 text-white/45 text-lg"
           >
             <Phone size={14} className="text-violet-300 shrink-0" />
             {phone}
