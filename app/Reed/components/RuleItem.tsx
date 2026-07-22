@@ -20,7 +20,6 @@ export const RuleItem = ({ rule, align = "left", index = 0 }: Props) => {
       transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
       className={`
         group
-        cursor-pointer
         flex
         items-center
         gap-4

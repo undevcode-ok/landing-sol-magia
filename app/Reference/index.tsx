@@ -37,7 +37,7 @@ export const Reference = () => {
 
             <button
               onClick={toggle}
-              className="mx-auto mt-8 flex items-center gap-1 text-violet-300 text-sm font-medium hover:text-violet-200 transition-colors"
+              className="mx-auto mt-8 flex items-center gap-1 text-violet-300 text-lg font-medium hover:text-violet-200 transition-colors cursor-pointer"
             >
               {showAll ? "Ver menos" : "Ver más"}
               <ChevronDown
