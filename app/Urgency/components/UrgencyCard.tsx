@@ -3,14 +3,12 @@
 import { motion } from "framer-motion";
 import { urgencyData } from "../data/urgency.data";
 
-interface Props {
-  onClick: () => void;
-}
 
-export const UrgencyCard = ({ onClick }: Props) => {
+
+export const UrgencyCard = () => {
   return (
     <motion.div
-      onClick={onClick}
+      
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ y: -8 }}
@@ -18,7 +16,6 @@ export const UrgencyCard = ({ onClick }: Props) => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="
         group
-        cursor-pointer
         overflow-hidden
         rounded-3xl
         w-full
@@ -56,32 +53,11 @@ export const UrgencyCard = ({ onClick }: Props) => {
             {urgencyData.title}
           </h3>
 
-          <p className="text-zinc-300 mb-8 text-xl font-bold max-w-4xl text-base leading-8">
+          <p className="text-zinc-300 mb-8 text-xl sm:text-xl lg:text-2xlfont-bold max-w-4xl leading-8">
             {urgencyData.shortDesc}
           </p>
 
-          <div className="flex items-center gap-3">
-            <div className="h-px w-10 bg-violet-700/60" />
-
-            <span
-              className="
-                uppercase
-                tracking-[0.18em]
-                text-xs
-                font-semibold
-                text-violet-300
-                text-center
-                md:text-left
-                transition-colors
-                duration-300
-                group-hover:text-violet-100
-              "
-            >
-              Ver Detalles
-            </span>
-
-            <div className="h-px w-10 bg-violet-700/60" />
-          </div>
+          
         </div>
       </div>
     </motion.div>

@@ -60,7 +60,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
           {canExpand && (
             <button
               onClick={toggle}
-              className="mt-2 flex items-center gap-1 text-violet-300 text-lg font-medium hover:text-violet-200 transition-colors"
+              className="mt-2 flex items-center gap-1 text-violet-300 text-lg font-medium hover:text-violet-200 transition-colors cursor-pointer"
             >
               {isExpanded ? "Ver menos" : "Ver más"}
               <ChevronDown
