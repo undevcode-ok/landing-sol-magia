@@ -9,6 +9,7 @@ export const Reed = () => {
 
   return (
     <section
+    id="reed"
       className="
         relative
         -mt-px

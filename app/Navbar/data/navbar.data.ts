@@ -6,9 +6,8 @@ export const logoData: LogoData = {
 };
 
 export const navLinks: NavLink[] = [
-  { label: "Inicio", href: "#hero" },
   { label: "Servicios", href: "#services" },
-  { label: "Aclaraciones", href: "#urgency" },
+  { label: "Aclaraciones", href: "#reed" },
   { label: "Referencias", href: "#references" },
 ];
 
