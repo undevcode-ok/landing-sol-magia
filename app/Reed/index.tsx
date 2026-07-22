@@ -10,6 +10,8 @@ export const Reed = () => {
   return (
     <section
       className="
+        relative
+        -mt-px
         min-h-[560px]
         flex
         flex-col
@@ -37,11 +39,11 @@ export const Reed = () => {
           max-w-7xl
         "
       >
-        <div className="shrink-0">
+        <div className="w-full lg:w-auto lg:shrink-0">
           <ReedImage />
         </div>
 
-        <div className="flex-1">
+        <div className="w-full lg:flex-1">
           <ReedRules rules={rules} />
         </div>
       </div>

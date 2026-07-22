@@ -13,10 +13,12 @@ export const UrgencyCard = ({ onClick }: Props) => {
         cursor-pointer
         overflow-hidden
         rounded-3xl
+        w-full
         max-w-7xl
+        mx-auto
         bg-zinc-900
         border
-        border-violet-800/40
+        border-transparent
         shadow-lg
         shadow-black/40
         transition-all
@@ -42,7 +44,7 @@ export const UrgencyCard = ({ onClick }: Props) => {
           />
         </div>
 
-        <div className="flex flex-1 flex-col justify-center px-10 py-10">
+        <div className="flex flex-1 flex-col justify-center p-6 md:px-10 md:py-10">
           <h3 className="font-secondary min-h-[64px] flex  text-violet-300 text-2xl font-semibold text-center uppercase">
             {urgencyData.title}
           </h3>
@@ -61,6 +63,8 @@ export const UrgencyCard = ({ onClick }: Props) => {
                 text-xs
                 font-semibold
                 text-violet-300
+                text-center
+                md:text-left
                 transition-colors
                 duration-300
                 group-hover:text-violet-100

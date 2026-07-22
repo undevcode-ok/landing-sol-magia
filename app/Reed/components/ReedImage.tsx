@@ -7,8 +7,11 @@ export const ReedImage = () => {
         src={data.img}
         alt={data.title}
         className="
-          w-[510px]
-          h-[550px]
+          w-full
+          h-[380px]
+          sm:h-[450px]
+          lg:w-[510px]
+          lg:h-[550px]
           object-cover
           rounded-3xl
           block

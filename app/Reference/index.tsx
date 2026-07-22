@@ -10,7 +10,7 @@ export const Reference = () => {
 
   return (
     <section id="references"
-      className="py-[72px] px-12 flex flex-col items-center gap-12"
+      className="relative -mt-px py-[72px] px-6 md:px-12 flex flex-col items-center gap-12"
       style={{
         background: "linear-gradient(180deg, #2e1065 0%, #000000 100%)",
       }}

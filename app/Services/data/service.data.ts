@@ -78,6 +78,17 @@ export const servicios: Servicie[] = [
       "Solicitar turno previo.",
     ],
   },
+  {
+    id: 9,
+    title: "Cursos",
+    img: "/img/services/cursos.webp",
+    desc: "Ofrezco cursos de formación en diversas disciplinas holísticas y espirituales, con un enfoque teórico y práctico para que puedas desarrollar tus conocimientos de manera integral.",
+    items: [
+      "Los contenidos se adaptan a tu tiempo y forma de aprendizaje, con modalidad presencial o virtual.",
+      "Todos los cursos incluyen material de estudio, certificación habilitante y diploma al finalizar.",
+      "Consultá por la disponibilidad e inscripción.",
+    ],
+  }
 ];
 
 
