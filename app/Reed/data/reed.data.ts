@@ -3,7 +3,7 @@ import { reedData } from "../types/reed.types";
 export const data: reedData = {
   title: "Leer Bien",
   description: "Aclaraciones importantes sobre políticas de atención y consultas",
-  img: "/img/profile/perfil-2.webp",
+  img: "/img/profile/profile.webp",
   rulesLeft: [
     { id: 1, text: "Todos los trabajos deberán abonarse previamente para confirmar el turno.", type: "yes" },
     { id: 2, text: "Es obligatorio enviar el comprobante de transferencia una vez realizado el pago.", type: "yes" },

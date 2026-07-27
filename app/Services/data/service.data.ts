@@ -70,7 +70,7 @@ export const servicios: Servicie[] = [
   },{
     id: 8,
     title: "Sesiones de psicología holística integral",
-    img: "/img/services/holistico.png",
+    img: "/img/services/holistico.webp",
     desc: "La psicología holística busca un abordaje integral del ser humano en relación con su entorno. En este tipo de terapias no solo acompaño el proceso mental del consultante, sino que también buscamos las posibles causas en factores como las vidas pasadas, las creencias limitantes, el estado energético y la relación con su entorno.",
     items: [
       "Mediante esta terapia decodificamos el origen de las enfermedades y trabajamos sobre ello con el objetivo de desbloquear y sanar.",
