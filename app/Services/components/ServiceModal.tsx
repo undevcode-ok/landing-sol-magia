@@ -99,10 +99,10 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
             </>
           )}
 
-          <div className="flex items-center justify-between gap-3 mt-6">
+          <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-3 mt-6">
             <button
               onClick={onClose}
-              className="font-secondary border border-[#555]  transition-colors text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4  gap-3 rounded-full flex items-center no-underline cursor-pointer  hover:border-violet-300 hover:text-violet-300"
+              className="font-secondary border border-[#555]  transition-colors text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4  gap-3 rounded-full flex items-center justify-center no-underline cursor-pointer  hover:border-violet-300 hover:text-violet-300 whitespace-nowrap"
             >
               Cerrar
             </button>
@@ -110,7 +110,7 @@ export const ServicieModal = ({ servicio, onClose }: Props) => {
               href={wpUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-secondary bg-[#581c87] hover:bg-[#3b0764] text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4 rounded-full flex items-center gap-3 transition-colors no-underline"
+              className="font-secondary bg-[#581c87] hover:bg-[#3b0764] text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4 rounded-full flex items-center justify-center gap-3 transition-colors no-underline whitespace-nowrap"
             >
               Solicitar turno
             </a>
